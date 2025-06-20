@@ -65,7 +65,7 @@ pipeline {
                     sh '''
                     echo 'Updating deploy.yaml...'
                     cat deploy.yaml
-                    sed -i "s/32/${BUILD_NUMBER}/g" deploy.yaml
+                    sed -i "s/v__BUILD__/v${BUILD_NUMBER}/g" deploy.yaml
                     cat deploy.yaml
 
                     git config user.email "jenkins@example.com"
