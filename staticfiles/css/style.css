@@ -1,18 +1,62 @@
-.page-header {
-  margin-top: 30px;
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
 }
 
-.fa-trash-alt {
-  color: red;
-  float: right;
+.container {
+  max-width: 500px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background: #28a745;
+  color: white;
+  border-radius: 4px;
   cursor: pointer;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  margin: 5px 0;
+  background: #eee;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume-section {
+  background: #e9f7ff;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
 .todo-complete {
   text-decoration: line-through;
+  color: #6c757d;
 }
 
-.todo-status-checkbox {
-  cursor: pointer;
-  margin-right: 10px;
-}
